@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    header{
+            width: 100%;
+            height:90px;
+            background-color: rgb(16, 20, 19);
+            box-shadow: -5px 2px 3px 3px;
+            display: flex;
+            justify-content: center;
+            position: fixed;
+        }
+        a{
+            color: rgb(201, 188, 136);
+            font-size: larger;
+            padding: 25px;
+        }
+        a:hover{
+            background-color: rgba(165, 42, 42, 0.644);
+            padding: 25px;
+        }
+        li{
+         display: inline;
+         padding-left: 50px;
+        }
+       ul{
+        padding-top: 25px;
+       }
+       main{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+       }
+       img{
+         height: auto;
+        width: 100%;
+        display: flex;
+       }
+       /* new */
+       .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+   background-color: rgb(16, 20, 19);
+}
+
+.content {
+  max-width: 50%;
+}
+
+.content h1 {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.content h1 span {
+  font-size: 60px;
+  color: white;
+}
+
+.content p {
+  margin: 20px 0;
+  line-height: 1.6;
+  border-top: 1px solid #d4af37;
+  border-bottom: 1px solid #d4af37;
+  padding: 15px 0;
+  font-size: 15px;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.btn {
+  background-color: #f3dfb9;
+  color: black;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #d4af37;
+}
+
+.play-btn {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.profile-pic img {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  border-radius: 50%;
+  border: 5px solid #d4af37;
+}
+img{
+    width: 100vw;
+    height: 100vh;
+}
+span{
+    color: black;
+}
+p{
+    color: #e9dede;
+}
+.circle{
+  background-color: black;
+}
+.head{
+        position: absolute;
+        top: 50%;
+        left: 18%;
+        transform: translate(-50% , -50%);
+        font-size: x-large;
+        font-family: 'Courier New', Courier, monospace;
+        animation:pageloadanimation 2s 2s infinite forwards ; 
+    }
+    @keyframes pageloadanimation {
+        from{
+            color: transparent;
+             transform: translate(0px , -50%);
+        }
+        to{
+            color: rgb(12, 12, 10);
+            transform: translate(-90%,-50%);
+        }
+    }
+
+</style>
+<body>
+    <header>
+      <h1 class="head">HUZAIFA PORTFOLIO </h1>
+       <ul>
+        <li><a href="port.html">HOME</a></li>
+         <li><a href="material.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+       </ul>
+    </header>
+    <main>
+        <main class="container">
+    <div class="content">
+      <h1>I AM <br /><span>HUZAIFA</span></h1>
+      <p>
+        I am Huzaifa. I am a web developer and skillful freelancer.<br />
+        I completed my freelancing in 2024 and nowadays I am doing web development from SMIT.<br />
+        I completed my matric from GBHS M N B T | 2025<br />
+        Therefore this is my first portfolio, so kindly rate it out of 10!
+      </p>
+      <div class="buttons">
+        <a href="#" class="btn">Explore Now</a>
+        <a href="#" class="play-btn">▶ explore now</a>
+      </div>
+    </div>
+
+    <div class="profile-pic">
+      <div class="circle"></div>
+      <img src="edit.jpg" alt="Huzaifa" />
+    </div>
+    </main>
+</body>
+</html>
